@@ -1,6 +1,6 @@
 {
   "updated": "Oct 08, 2026",
-  "collected_at": "2026-10-08T16:36:32.634895+00:00",
+  "collected_at": "2026-10-08T17:00:07.382201+00:00",
   "repos": [
     {
       "name": "Automated-SOC-Pipeline-Using-Wazuh-Shuffle-and-TheHive",
@@ -162,12 +162,7 @@
     },
     {
       "name": "bran-dot-flake.github.io",
-      "languages": {
-        "JavaScript": 852,
-        "Python": 264,
-        "CSS": 238,
-        "HTML": 217
-      },
+      "languages": {},
       "files": 52,
       "commits": [
         {
@@ -733,9 +728,7 @@
     },
     {
       "name": "Python-IOC-Threat-Intelligence-Analyzer",
-      "languages": {
-        "Python": 829
-      },
+      "languages": {},
       "files": 4,
       "commits": [
         {

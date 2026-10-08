@@ -1,15 +1,10 @@
 {
   "updated": "Oct 08, 2026",
-  "lines_of_code": 2400,
+  "lines_of_code": 0,
   "tracked_files": 231,
   "commits_90d": 180,
   "repositories": 10,
-  "languages": {
-    "JavaScript": 852,
-    "Python": 1093,
-    "CSS": 238,
-    "HTML": 217
-  },
+  "languages": {},
   "specializations": {
     "DFIR": 3,
     "Threat hunting": 1,
