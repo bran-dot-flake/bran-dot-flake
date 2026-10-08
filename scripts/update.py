@@ -44,8 +44,8 @@ def scan(repo):
                         repo['clone_url'],str(dest)],check=True,timeout=300)
         command=[os.getenv('CLOC','cloc')]
         if command[0].endswith('/cloc') and not os.access(command[0],os.X_OK): command.insert(0,'perl')
-        out=subprocess.run(command+['--json','--quiet','--vcs=git',
-            '--exclude-dir=node_modules,vendor,dist,build,.venv,venv,coverage',str(dest)],
+        out=subprocess.run(command+['--json','--quiet',
+            '--exclude-dir=node_modules,vendor,dist,build,.venv,venv,coverage,.git',str(dest)],
             check=True,capture_output=True,text=True,timeout=180)
         data=json.loads(out.stdout or '{}')
         # cloc treats prose/data as languages; keep them out of the code metric.
@@ -64,7 +64,7 @@ def rect(x,y,w,h,fill,rx=12,stroke='none'):
     return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="{fill}" stroke="{stroke}"/>'
 def svg(w,h,body,title):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{html.escape(title)}">
-<title>{html.escape(title)}</title><style>text{{font-family:Segoe UI,Arial,sans-serif}}.pulse{{animation:pulse 5s ease-in-out infinite}}.flow{{stroke-dasharray:4 9;animation:flow 24s linear infinite}}@keyframes pulse{{0%,100%{{opacity:.45}}50%{{opacity:1}}}}@keyframes flow{{to{{stroke-dashoffset:-130}}}}@media(prefers-reduced-motion:reduce){{*{{animation:none!important}}}}</style>{body}</svg>'''
+<title>{html.escape(title)}</title><style>text{{font-family:Segoe UI,Arial,sans-serif}}.sweep{{animation:sweep 12s linear infinite}}@keyframes sweep{{from{{stroke-dashoffset:var(--distance)}}to{{stroke-dashoffset:0}}}}.wave{{animation:wave 16s ease-in-out infinite alternate;transform-origin:center}}.wave2{{animation:wave 22s ease-in-out infinite alternate-reverse;transform-origin:center}}@keyframes wave{{from{{transform:translateX(-25px) scaleY(.92)}}to{{transform:translateX(25px) scaleY(1.08)}}}}.pulse{{animation:pulse 5s ease-in-out infinite}}.flow{{stroke-dasharray:4 9;animation:flow 24s linear infinite}}@keyframes pulse{{0%,100%{{opacity:.45}}50%{{opacity:1}}}}@keyframes flow{{to{{stroke-dashoffset:-130}}}}@media(prefers-reduced-motion:reduce){{*{{animation:none!important}}}}</style>{body}</svg>'''
 
 def render(data):
     repos=data['repos']; scans=data['scans']
@@ -78,8 +78,8 @@ def render(data):
     metrics=[(f'{sum(langs.values()):,}','lines of code'),(f'{sum(s["files"] for s in scans):,}','tracked files'),(len(commits),'commits / 90 days'),(len(repos),'repositories')]
     for i,(value,label) in enumerate(metrics):
         x=26+i*220
-        b+=text(x,74,value,30,'#edf3fb',650)+text(x,97,label,12)
-        b+=rect(x,112,192,3,PALETTE[i],1)
+        b+=rect(x,44,192,72,['#183c36','#18334f','#302547','#42263b'][i],10)
+        b+=text(x+16,77,value,29,PALETTE[i],650)+text(x+16,99,label,12,'#dce5f1')
     b+=text(26,146,'CODE COMPOSITION',11,'#d4deeb',650)
     top=langs.most_common(4); total=sum(langs.values())
     if len(langs)>4: top.append(('Other',sum(v for _,v in langs.most_common()[4:])))
@@ -100,37 +100,36 @@ def render(data):
         b+=text(x,y+29,area['name'],12,'#cbd6e6',400,'middle')
     b+=f'<circle cx="663" cy="233" r="37" fill="#141f2e" stroke="#3b4b61"/>'
     b+=text(663,231,'SECURITY',10,'#edf3fb',700,'middle')+text(663,246,'OPERATIONS',9,'#a3b1c3',400,'middle')
-    b+=text(26,350,'WEEKLY COMMITS',10,'#d4deeb',650)
+    b+=text(26,371,'WEEKLY COMMITS',10,'#d4deeb',650)
     bins=[0]*13
     end=dt.datetime.fromisoformat(data['collected_at'])
     for c in commits.values():
         age=(end-dt.datetime.fromisoformat(c['date'].replace('Z','+00:00'))).days
         if 0<=age<90: bins[12-min(12,age//7)]+=1
-    points=' '.join(f'{26+i*30},{393-n/max(1,max(bins))*30:.1f}' for i,n in enumerate(bins))
-    b+=f'<polyline points="{points}" fill="none" stroke="#79dfb5" stroke-width="2" stroke-linejoin="round"/>'
-    b+=text(26,418,'90 days ago',10)+text(386,418,'now',10,anchor='end')
-    b+=text(452,393,'Nodes count matching repos; areas can overlap.',11)
-    b+=text(452,414,'Public originals · default branches · bots excluded from commits',10)
+    points=' '.join(f'{26+i*70.6:.1f},{411-n/max(1,max(bins))*27:.1f}' for i,n in enumerate(bins))
+    import math
+    coords=[tuple(map(float,p.split(','))) for p in points.split()]
+    length=sum(math.dist(a,b) for a,b in zip(coords,coords[1:]))
+    b+='<defs><linearGradient id="signal"><stop stop-color="#79dfb5"/><stop offset=".5" stop-color="#ba9cff"/><stop offset="1" stop-color="#68dbeb"/></linearGradient></defs>'
+    for x in range(26,875,70):
+        b+=f'<path d="M{x} 381 V419" stroke="#253043" opacity=".35"/>'
+    b+=f'<polyline points="{points}" fill="none" stroke="url(#signal)" stroke-opacity=".24" stroke-width="2" stroke-linejoin="round"/>'
+    b+=f'<polyline class="sweep" style="stroke-dasharray:120 {length:.1f};--distance:{length+120:.1f}" points="{points}" fill="none" stroke="url(#signal)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>'
+    b+=text(874,371,'90 DAYS',10,anchor='end')
     (ROOT/'assets/dashboard.svg').write_text(svg(900,438,b,'Public repository metrics, code composition, weekly commits and specialization network'))
-    for i,item in enumerate(CFG['featured']):
-        repo=next((r for r in repos if r['name']==item['repo']),None)
-        if not repo: raise ValueError('Featured repository missing: '+item['repo'])
-        c=item['color']; b=rect(1,1,438,144,'#101824',14,'#283449')+rect(19,20,3,103,c,1)
-        b+=text(35,30,item['category'],10,c,700)+text(35,60,item['title'],19,'#edf3fb',650)
-        for j,line in enumerate(item['lines']): b+=text(35,84+j*20,line,12)
-        b+=text(35,130,f'Updated {repo["pushed_at"][:10]}',10)
-        if repo['stargazers_count']:
-            b+=text(415,130,f'{repo["stargazers_count"]} stars',10,c,400,'end')
-        (ROOT/f'assets/project-{i+1}.svg').write_text(svg(440,146,b,item['title']+' — '+'. '.join(item['lines'])))
-    cards=[]
-    for i,item in enumerate(CFG['featured']):
-        cards.append(f'<a href="https://github.com/{USER}/{item["repo"]}"><img width="49%" src="assets/project-{i+1}.svg" alt="{html.escape(item["title"])} — {html.escape(item["lines"][0])}" /></a>')
-    readme=f'''# Brandon Chaney
-**IT foundation. Security focus. Evidence behind the work.**
-
-I support users and infrastructure, investigate security events, and build tools that make the next investigation easier.
-
-[Portfolio](https://brandonchaney.dev) · [All repositories](https://github.com/{USER}?tab=repositories)
+    header='<defs><linearGradient id="sky"><stop stop-color="#0d131d"/><stop offset=".5" stop-color="#193848"/><stop offset="1" stop-color="#225969"/></linearGradient><clipPath id="banner"><rect width="900" height="150" rx="14"/></clipPath></defs>'
+    header+='<g clip-path="url(#banner)"><rect width="900" height="150" fill="url(#sky)"/><path class="wave2" d="M-70 124 Q150 82 420 121 T970 103 V170 H-70Z" fill="#7392db" opacity=".14"/><path class="wave" d="M-70 126 Q210 158 500 117 T970 133 V180 H-70Z" fill="#0d1117" opacity=".9"/></g>'
+    header+=text(450,86,'Brandon Chaney',38,'#f0f5fc',650,'middle')
+    (ROOT/'assets/header.svg').write_text(svg(900,150,header,'Brandon Chaney'))
+    tools=[('Splunk','#155f71'),('Sentinel','#006dba'),('Wireshark','#245bb0'),('Sysmon','#7252ac'),('Wazuh','#258446'),('Shuffle','#b55638'),('TheHive','#8e6919')]
+    badges=''; x=0
+    for name,color in tools:
+        w=len(name)*8+40
+        badges+=rect(x,1,w,28,color,0)+rect(x,1,24,28,'#223044',0)
+        badges+=text(x+12,20,'›',18,'#edf3fb',700,'middle')+text(x+31,20,name,13,'#fff',600)
+        x+=w+8
+    (ROOT/'assets/tools.svg').write_text(svg(x-8,30,badges,'Splunk, Sentinel, Wireshark, Sysmon, Wazuh, Shuffle and TheHive'))
+    readme=f'''<img src="assets/header.svg" width="900" alt="Brandon Chaney" />
 
 <img src="assets/dashboard.svg" width="900" alt="Public work: {sum(langs.values()):,} lines of code, {sum(s['files'] for s in scans):,} tracked files, {len(commits)} non-bot commits in 90 days, {len(repos)} repositories. Topic counts: {', '.join(a['name']+': '+str(n) for a,n in zip(CFG['specializations'],counts))}." />
 
@@ -138,26 +137,7 @@ I support users and infrastructure, investigate security events, and build tools
 
 <img src="https://skillicons.dev/icons?i={CFG['skills']}&amp;theme=dark&amp;perline=8" height="46" alt="Python, Azure, Linux, Bash, Docker, Git, PowerShell, Windows" />
 
-**Investigate:** Splunk · Sentinel · Wireshark · Sysmon &nbsp; **Automate:** Wazuh · Shuffle · TheHive
-
-### Selected work
-
-<p>
-{cards[0]}
-{cards[1]}
-<br />
-{cards[2]}
-{cards[3]}
-</p>
-
-<details>
-<summary>Behind the dashboard</summary>
-
-Updated daily by GitHub Actions. Code and files are measured from current default branches of public, non-fork, non-archived repositories; this profile repository is excluded. Code uses cloc and excludes prose, data/config formats, and common build/vendor folders. Files include all tracked files, including images and documentation. Code totals describe repository contents, not sole authorship.
-
-Commits cover the last 90 days on those default branches, across all authors, excluding identifiable bots and deduplicating hashes. The line shows 13 weekly buckets (the oldest is partial); it is not GitHub's contribution calendar. The specialization network counts repository topics, not proficiency. Skills and featured-project descriptions are deliberately curated.
-
-</details>
+<img src="assets/tools.svg" alt="Splunk, Sentinel, Wireshark, Sysmon, Wazuh, Shuffle, TheHive" />
 '''
     (ROOT/'README.md').write_text(readme)
     (ROOT/'data/metrics.json').write_text(json.dumps({'updated':data['updated'],'lines_of_code':sum(langs.values()),'tracked_files':sum(s['files'] for s in scans),'commits_90d':len(commits),'repositories':len(repos),'languages':dict(langs),'specializations':dict(zip([a['name'] for a in CFG['specializations']],counts))},indent=2)+'\n')
