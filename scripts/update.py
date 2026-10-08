@@ -2,7 +2,7 @@
 """Build a GitHub-native profile from public repository evidence. Python 3.12+."""
 import collections, concurrent.futures, datetime as dt, html, json, os
 from pathlib import Path
-import shutil, subprocess, tempfile, time, urllib.request
+import subprocess, tempfile, time, urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
 CFG = json.loads((ROOT / 'config.json').read_text())
@@ -51,7 +51,11 @@ def scan(repo):
         # cloc treats prose/data as languages; keep them out of the code metric.
         excluded={'SUM','header','Markdown','JSON','YAML','Text','CSV','XML','SVG','TOML','INI','reStructuredText'}
         languages={k:v['code'] for k,v in data.items() if k not in excluded and isinstance(v,dict)}
-        files=len(subprocess.check_output(['git','-C',str(dest),'ls-files','-z']).split(b'\0'))-1
+        tracked=subprocess.check_output(['git','-C',str(dest),'ls-files','-z']).split(b'\0')[:-1]
+        files=len(tracked)
+        source_extensions={b'.py',b'.js',b'.jsx',b'.ts',b'.tsx',b'.css',b'.html',b'.sh',b'.go'}
+        if any(Path(os.fsdecode(path)).suffix.lower().encode() in source_extensions for path in tracked) and not sum(languages.values()):
+            raise RuntimeError(f'Code scan returned zero for {name}, despite tracked source files; preserving the last good dashboard')
     commits=pages(f'repos/{USER}/{name}/commits?since={SINCE}')
     # All authors, default branch. Bot commits excluded when GitHub identifies the account.
     commits=[{'sha':c['sha'],'date':c['commit']['committer']['date']} for c in commits
@@ -117,10 +121,6 @@ def render(data):
     b+=f'<polyline class="sweep" style="stroke-dasharray:120 {length:.1f};--distance:{length+120:.1f}" points="{points}" fill="none" stroke="url(#signal)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>'
     b+=text(874,371,'90 DAYS',10,anchor='end')
     (ROOT/'assets/dashboard.svg').write_text(svg(900,438,b,'Public repository metrics, code composition, weekly commits and specialization network'))
-    header='<defs><linearGradient id="sky"><stop stop-color="#0d131d"/><stop offset=".5" stop-color="#193848"/><stop offset="1" stop-color="#225969"/></linearGradient><clipPath id="banner"><rect width="900" height="150" rx="14"/></clipPath></defs>'
-    header+='<g clip-path="url(#banner)"><rect width="900" height="150" fill="url(#sky)"/><path class="wave2" d="M-70 124 Q150 82 420 121 T970 103 V170 H-70Z" fill="#7392db" opacity=".14"/><path class="wave" d="M-70 126 Q210 158 500 117 T970 133 V180 H-70Z" fill="#0d1117" opacity=".9"/></g>'
-    header+=text(450,86,'Brandon Chaney',38,'#f0f5fc',650,'middle')
-    (ROOT/'assets/header.svg').write_text(svg(900,150,header,'Brandon Chaney'))
     tools=[('Splunk','#155f71'),('Sentinel','#006dba'),('Wireshark','#245bb0'),('Sysmon','#7252ac'),('Wazuh','#258446'),('Shuffle','#b55638'),('TheHive','#8e6919')]
     badges=''; x=0
     for name,color in tools:
@@ -129,9 +129,8 @@ def render(data):
         badges+=text(x+12,20,'›',18,'#edf3fb',700,'middle')+text(x+31,20,name,13,'#fff',600)
         x+=w+8
     (ROOT/'assets/tools.svg').write_text(svg(x-8,30,badges,'Splunk, Sentinel, Wireshark, Sysmon, Wazuh, Shuffle and TheHive'))
-    readme=f'''<img src="assets/header.svg" width="900" alt="Brandon Chaney" />
-
-<img src="assets/dashboard.svg" width="900" alt="Public work: {sum(langs.values()):,} lines of code, {sum(s['files'] for s in scans):,} tracked files, {len(commits)} non-bot commits in 90 days, {len(repos)} repositories. Topic counts: {', '.join(a['name']+': '+str(n) for a,n in zip(CFG['specializations'],counts))}." />
+    version=dt.datetime.fromisoformat(data['collected_at']).strftime('%Y%m%d%H%M%S')
+    readme=f'''<img src="assets/dashboard.svg?v={version}" width="900" alt="Public work: {sum(langs.values()):,} lines of code, {sum(s['files'] for s in scans):,} tracked files, {len(commits)} non-bot commits in 90 days, {len(repos)} repositories. Topic counts: {', '.join(a['name']+': '+str(n) for a,n in zip(CFG['specializations'],counts))}." />
 
 ### Tools I work with
 
