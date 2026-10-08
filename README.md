@@ -1,6 +1,4 @@
-<img src="assets/header.svg" width="900" alt="Brandon Chaney" />
-
-<img src="assets/dashboard.svg" width="900" alt="Public work: 2,400 lines of code, 231 tracked files, 180 non-bot commits in 90 days, 10 repositories. Topic counts: DFIR: 3, Threat hunting: 1, Automation: 2, Cloud security: 1, Network analysis: 2." />
+<img src="assets/dashboard.svg?v=20261008163632" width="900" alt="Public work: 2,400 lines of code, 231 tracked files, 180 non-bot commits in 90 days, 10 repositories. Topic counts: DFIR: 3, Threat hunting: 1, Automation: 2, Cloud security: 1, Network analysis: 2." />
 
 ### Tools I work with
 

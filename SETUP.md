@@ -45,18 +45,25 @@ The current included snapshot is real collected data, not mock numbers. See data
 - **Skills:** change the Skill Icons IDs in config.json; update the matching alt text in scripts/update.py.
 - **Tool badges:** edit the `tools` list in scripts/update.py.
 - **Network:** update the five categories and topic aliases in config.json. Topics measure repository coverage, not proficiency.
-- **Header and colors:** edit the SVG renderer in scripts/update.py.
-- **Less motion:** remove the `wave`, `wave2`, and `sweep` classes. Reduced-motion preferences disable CSS animations where supported. The network retains its subtle moving connections.
+- **Colors:** edit the SVG renderer in scripts/update.py.
+- **Less motion:** remove the `sweep` and `flow` classes. Reduced-motion preferences disable CSS animations where supported. The network retains its subtle moving connections.
 
 ## Layout and motion
 
-The profile contains just a name banner, summary dashboard, skill icons, and tool badges. The marked intro, explanatory notes and featured-project section were removed. GitHub's native pinned repos remain managed separately in your profile.
+The profile contains the summary dashboard, skill icons, and tool badges. The name banner and the marked intro, explanatory notes and featured-project section were removed. GitHub's native pinned repos remain managed separately in your profile.
 
-The header has two gently drifting waves on a restrained gradient. The weekly activity line has a repeating highlight over actual weekly commit counts; animation is decorative, not live incoming events. Stat cards use distinct tinted blocks. SVG images work without JavaScript or Pages; clients that disable animation retain the full static layout.
+The weekly activity line has a repeating highlight over actual weekly commit counts; animation is decorative, not live incoming events. Stat cards use distinct tinted blocks. SVG images work without JavaScript or Pages; clients that disable animation retain the full static layout.
 
-`preview.html` shows the animated composition locally. `preview.png` is a static composition preview, not a screenshot of a published profile. These preview files do not update daily. The README and SVGs do.
+`preview.html` shows the animated composition locally. `preview.png` is a static composition preview, not a screenshot of a published profile. These preview files do not update daily. The README and SVGs do. The dashboard image URL gets a new version value on each successful refresh so GitHub requests the latest SVG.
 
-The code scan walks each fresh clone's checkout directly, excluding .git and common build/vendor folders; it does not depend on cloc's version-specific --vcs behavior. The included data snapshot is retained from the successful measured scan. Running Actions collects fresh data.
+The code scan walks each fresh clone's checkout directly, excluding .git and common build/vendor folders. It aborts if a repository has tracked source files but the counter returns no code. The included data snapshot comes from a previous successful scan. Running Actions collects fresh data.
+
+## If GitHub shows stale or zero metrics
+
+1. Confirm the root `README.md` uses `assets/dashboard.svg?v=...`, and that `assets/dashboard.svg` in the **same repository root** shows the latest value in its source. If it does, reload the profile. The version changes after each successful workflow run.
+2. Open **Actions → Refresh profile dashboard** and run it manually. A successful run commits updated `README.md`, `assets/dashboard.svg` and `data/source.json`. If it fails, read the first failed step in that run; the prior dashboard stays intact.
+3. If the root README refers to `assets/dashboard.svg` but the new files are under `profile-dashboard/assets`, upload the contents of `profile-dashboard` to the repository root. GitHub does not unpack the ZIP for you.
+4. If the workflow never appears, confirm `.github/workflows/dashboard.yml` is at the root and the repo uses `main` as its default branch. The old unreferenced `assets/header.svg` can be deleted later in the web interface.
 
 ## Local regeneration
 
