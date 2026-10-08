@@ -1,0 +1,20 @@
+{
+  "updated": "Oct 08, 2026",
+  "lines_of_code": 2400,
+  "tracked_files": 231,
+  "commits_90d": 180,
+  "repositories": 10,
+  "languages": {
+    "JavaScript": 852,
+    "Python": 1093,
+    "CSS": 238,
+    "HTML": 217
+  },
+  "specializations": {
+    "DFIR": 3,
+    "Threat hunting": 1,
+    "Automation": 2,
+    "Cloud security": 1,
+    "Network analysis": 2
+  }
+}
