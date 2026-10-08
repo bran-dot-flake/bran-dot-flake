@@ -1,18 +1,59 @@
 {
   "username": "bran-dot-flake",
-  "exclude_repositories": ["bran-dot-flake"],
+  "exclude_repositories": [
+    "bran-dot-flake"
+  ],
   "skills": "python,azure,linux,bash,docker,git,powershell,windows",
   "specializations": [
-    {"name":"DFIR", "color":"#ba9cff", "topics":["dfir","forensics","incident-response","malware-analysis"]},
-    {"name":"Threat hunting", "color":"#77baff", "topics":["threat-hunting","splunk","detection-engineering"]},
-    {"name":"Automation", "color":"#79dfb5", "topics":["soar","python","shuffle","automation","ioc-analysis"]},
-    {"name":"Cloud security", "color":"#f4bf75", "topics":["azure","sentinel","cloud-security","honeypot"]},
-    {"name":"Network analysis", "color":"#ef92be", "topics":["packet-analysis","wireshark","tshark","network-security"]}
-  ],
-  "featured": [
-    {"repo":"Automated-SOC-Pipeline-Using-Wazuh-Shuffle-and-TheHive", "title":"Automated SOC pipeline", "category":"01 / AUTOMATE", "color":"#79dfb5", "lines":["From alert to enrichment to case creation.","Wazuh · Shuffle · TheHive"]},
-    {"repo":"Threat-Hunting-with-Splunk-Hack-The-Box-Writeup", "title":"Threat hunting with Splunk", "category":"02 / INVESTIGATE", "color":"#77baff", "lines":["Trace execution, C2, and attacker commands.","Splunk · Sysmon · Hack The Box"]},
-    {"repo":"Python-IOC-Threat-Intelligence-Analyzer", "title":"Python IOC analyzer", "category":"03 / BUILD", "color":"#ba9cff", "lines":["Turn indicators into useful threat context.","Python · VirusTotal · AlienVault OTX"]},
-    {"repo":"Network-Traffic-Analysis-with-Wireshark", "title":"Network traffic analysis", "category":"04 / RECONSTRUCT", "color":"#ef92be", "lines":["Follow the evidence across network protocols.","Wireshark · HTTP · SMB · Kerberos"]}
+    {
+      "name": "DFIR",
+      "color": "#ba9cff",
+      "topics": [
+        "dfir",
+        "forensics",
+        "incident-response",
+        "malware-analysis"
+      ]
+    },
+    {
+      "name": "Threat hunting",
+      "color": "#77baff",
+      "topics": [
+        "threat-hunting",
+        "splunk",
+        "detection-engineering"
+      ]
+    },
+    {
+      "name": "Automation",
+      "color": "#79dfb5",
+      "topics": [
+        "soar",
+        "python",
+        "shuffle",
+        "automation",
+        "ioc-analysis"
+      ]
+    },
+    {
+      "name": "Cloud security",
+      "color": "#f4bf75",
+      "topics": [
+        "azure",
+        "sentinel",
+        "cloud-security",
+        "honeypot"
+      ]
+    },
+    {
+      "name": "Network analysis",
+      "color": "#ef92be",
+      "topics": [
+        "packet-analysis",
+        "wireshark",
+        "tshark",
+        "network-security"
+      ]
+    }
   ]
 }
