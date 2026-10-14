@@ -1,6 +1,6 @@
 {
-  "updated": "Oct 13, 2026",
-  "collected_at": "2026-10-13T17:40:55.500581+00:00",
+  "updated": "Oct 14, 2026",
+  "collected_at": "2026-10-14T15:14:56.366161+00:00",
   "repos": [
     {
       "name": "Automated-SOC-Pipeline-Using-Wazuh-Shuffle-and-TheHive",
@@ -21,7 +21,7 @@
         "github-pages",
         "portfolio"
       ],
-      "pushed_at": "2026-10-13T17:40:00Z",
+      "pushed_at": "2026-10-14T15:14:04Z",
       "stargazers_count": 0
     },
     {
