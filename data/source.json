@@ -1,6 +1,6 @@
 {
-  "updated": "Oct 14, 2026",
-  "collected_at": "2026-10-14T15:14:56.366161+00:00",
+  "updated": "Oct 15, 2026",
+  "collected_at": "2026-10-15T15:08:44.062207+00:00",
   "repos": [
     {
       "name": "Automated-SOC-Pipeline-Using-Wazuh-Shuffle-and-TheHive",
@@ -21,7 +21,7 @@
         "github-pages",
         "portfolio"
       ],
-      "pushed_at": "2026-10-14T15:14:04Z",
+      "pushed_at": "2026-10-15T15:07:14Z",
       "stargazers_count": 0
     },
     {
@@ -97,6 +97,12 @@
         "sentinel"
       ],
       "pushed_at": "2026-06-09T18:00:44Z",
+      "stargazers_count": 0
+    },
+    {
+      "name": "Support-Hack-The-Box-Writeup",
+      "topics": [],
+      "pushed_at": "2026-10-15T14:56:19Z",
       "stargazers_count": 0
     },
     {
@@ -876,6 +882,65 @@
       "languages": {},
       "files": 18,
       "commits": []
+    },
+    {
+      "name": "Support-Hack-The-Box-Writeup",
+      "languages": {},
+      "files": 6,
+      "commits": [
+        {
+          "sha": "8bb60290a53509f6ea67fa9ad75f9d02ea83aecf",
+          "date": "2026-10-15T14:56:18Z"
+        },
+        {
+          "sha": "d171bd598ef05a3f7ba135a3c8b9d80843614769",
+          "date": "2026-10-15T14:52:24Z"
+        },
+        {
+          "sha": "3d0d56c9636b766b897ecbbd3f7cf031bd96710c",
+          "date": "2026-10-15T14:44:52Z"
+        },
+        {
+          "sha": "952b540b7fe7bff33d373fec1d9d1143af259c76",
+          "date": "2026-10-15T14:43:53Z"
+        },
+        {
+          "sha": "916292aa302aefabffbd352d321f654521a29e20",
+          "date": "2026-10-15T14:20:30Z"
+        },
+        {
+          "sha": "2ca27c3d9fde2e47023717f2434fa2168f4e7a93",
+          "date": "2026-10-15T13:35:10Z"
+        },
+        {
+          "sha": "923335130382b956e559b3b5de4ac3ea6b7f3d23",
+          "date": "2026-10-15T13:34:36Z"
+        },
+        {
+          "sha": "ac0f9edb673095f9184e5bd9594dff9da5b9f575",
+          "date": "2026-10-15T13:34:10Z"
+        },
+        {
+          "sha": "e8f1669b692fc462c837b5562209d6fd7cb05b32",
+          "date": "2026-10-15T13:33:16Z"
+        },
+        {
+          "sha": "2330226a5f2bf2e794a3d340396bf7669f1c6553",
+          "date": "2026-10-15T13:32:46Z"
+        },
+        {
+          "sha": "a8dc543a47fd04628de6384b679332371fdfc645",
+          "date": "2026-10-15T13:32:35Z"
+        },
+        {
+          "sha": "fa58d6b2da530f505f7aef8fb5823c67561b1152",
+          "date": "2026-10-15T13:32:16Z"
+        },
+        {
+          "sha": "8469ece58b619c3c7188ab059d23154060922d25",
+          "date": "2026-10-15T13:31:41Z"
+        }
+      ]
     },
     {
       "name": "Threat-Hunting-with-Splunk-Hack-The-Box-Writeup",
