@@ -1,6 +1,6 @@
 {
-  "updated": "Oct 16, 2026",
-  "collected_at": "2026-10-16T14:56:34.032773+00:00",
+  "updated": "Oct 17, 2026",
+  "collected_at": "2026-10-17T13:49:04.023956+00:00",
   "repos": [
     {
       "name": "Automated-SOC-Pipeline-Using-Wazuh-Shuffle-and-TheHive",
@@ -16,8 +16,14 @@
     },
     {
       "name": "Bedside-Hack-The-Box-Writeup",
-      "topics": [],
-      "pushed_at": "2026-10-16T14:55:29Z",
+      "topics": [
+        "directory-traversal",
+        "hackthebox-machine",
+        "linux",
+        "medium",
+        "pytorch"
+      ],
+      "pushed_at": "2026-10-16T18:30:38Z",
       "stargazers_count": 0
     },
     {
@@ -27,7 +33,7 @@
         "github-pages",
         "portfolio"
       ],
-      "pushed_at": "2026-10-16T14:55:40Z",
+      "pushed_at": "2026-10-17T13:48:13Z",
       "stargazers_count": 0
     },
     {
@@ -180,20 +186,115 @@
     },
     {
       "name": "Bedside-Hack-The-Box-Writeup",
-      "languages": {},
-      "files": 0,
-      "commits": []
+      "languages": {
+        "Python": 92
+      },
+      "files": 4,
+      "commits": [
+        {
+          "sha": "bf0c1a68d50d199eddfd1538792115b50ad62e3e",
+          "date": "2026-10-16T18:30:37Z"
+        },
+        {
+          "sha": "b20cdb3f5fcf5543dc19d6af68fa49e8cb22e5cf",
+          "date": "2026-10-16T18:29:31Z"
+        },
+        {
+          "sha": "342e7594d9d455e9424ec3bb5ee2d8a26fb9fad3",
+          "date": "2026-10-16T18:29:20Z"
+        },
+        {
+          "sha": "ca70e702c9feb7d34a9181d8d74b3fcf5f42cc87",
+          "date": "2026-10-16T18:29:04Z"
+        },
+        {
+          "sha": "9b436b1738480a91ba5f2be61b20669eee6af91f",
+          "date": "2026-10-16T18:28:40Z"
+        },
+        {
+          "sha": "0fe2539a22177a55fba59859991c220e140379b3",
+          "date": "2026-10-16T18:25:31Z"
+        },
+        {
+          "sha": "68ecf4c609808b866f4b87eb898d210149ccf648",
+          "date": "2026-10-16T18:25:19Z"
+        },
+        {
+          "sha": "35cd554783b2c40f741cfba84cd409fdb9a0920f",
+          "date": "2026-10-16T18:25:04Z"
+        },
+        {
+          "sha": "449f0a302034d49c3ca08e6178a2dcfbb022544e",
+          "date": "2026-10-16T18:24:51Z"
+        },
+        {
+          "sha": "5500180535112b07be8fd95c837299cee083e290",
+          "date": "2026-10-16T18:24:27Z"
+        },
+        {
+          "sha": "9c4f0e8a96d52a094ac18c1b149b5a70827ced5b",
+          "date": "2026-10-16T17:47:56Z"
+        },
+        {
+          "sha": "80b932cdde37bcd0a9d2ce1129c8829c8ea91695",
+          "date": "2026-10-16T16:09:00Z"
+        },
+        {
+          "sha": "27e0bcfe0aa410f2f1e5da8a3e31c2d3d0c69177",
+          "date": "2026-10-16T15:46:42Z"
+        },
+        {
+          "sha": "febd82a68832e07962cedfbcfddb35790086367f",
+          "date": "2026-10-16T15:21:22Z"
+        },
+        {
+          "sha": "2cdce1beba884071e851db7a934562d933b5b9e5",
+          "date": "2026-10-16T15:20:27Z"
+        },
+        {
+          "sha": "382248d45e6cc25554dbec65de0b608b335df961",
+          "date": "2026-10-16T15:16:04Z"
+        },
+        {
+          "sha": "0bc371671462426b62be3d7b178a575ba8dfc82e",
+          "date": "2026-10-16T14:55:27Z"
+        },
+        {
+          "sha": "f760d31ab1a1188dc2df40b66310325358ce1185",
+          "date": "2026-10-16T14:55:05Z"
+        },
+        {
+          "sha": "31bf085fc7f3e95d0387d650938b2730ecd202b5",
+          "date": "2026-10-16T14:54:45Z"
+        },
+        {
+          "sha": "a99c6b46d22695ef1934b499e4aac5878bba023f",
+          "date": "2026-10-16T14:53:04Z"
+        }
+      ]
     },
     {
       "name": "bran-dot-flake.github.io",
       "languages": {
-        "JavaScript": 1471,
-        "CSS": 600,
-        "Python": 461,
+        "JavaScript": 1651,
+        "CSS": 619,
+        "Python": 505,
         "HTML": 284
       },
-      "files": 68,
+      "files": 70,
       "commits": [
+        {
+          "sha": "9bb3a67b1989f1f8b739b34f5d3cb8c97a9fd77a",
+          "date": "2026-10-16T19:06:12Z"
+        },
+        {
+          "sha": "b6090a703ee2524c23f7ba5c948df98cdb37490f",
+          "date": "2026-10-16T19:03:29Z"
+        },
+        {
+          "sha": "3e68d82f22b42977658a8d0c20cb07ee9d4ee053",
+          "date": "2026-10-16T18:58:28Z"
+        },
         {
           "sha": "0293a08d9f61f6b6a8883afbef681d68e58d9b91",
           "date": "2026-10-15T18:50:36Z"
