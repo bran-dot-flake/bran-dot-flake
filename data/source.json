@@ -1,6 +1,6 @@
 {
-  "updated": "Oct 18, 2026",
-  "collected_at": "2026-10-18T14:04:02.855186+00:00",
+  "updated": "Oct 19, 2026",
+  "collected_at": "2026-10-19T17:02:49.058886+00:00",
   "repos": [
     {
       "name": "Automated-SOC-Pipeline-Using-Wazuh-Shuffle-and-TheHive",
@@ -33,7 +33,7 @@
         "github-pages",
         "portfolio"
       ],
-      "pushed_at": "2026-10-18T14:03:12Z",
+      "pushed_at": "2026-10-19T17:01:31Z",
       "stargazers_count": 0
     },
     {
@@ -276,7 +276,7 @@
     {
       "name": "bran-dot-flake.github.io",
       "languages": {
-        "JavaScript": 1651,
+        "JavaScript": 1661,
         "CSS": 619,
         "Python": 505,
         "HTML": 284
