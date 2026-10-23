@@ -1,4 +1,4 @@
-<img src="assets/dashboard.svg?v=20261022152426" width="900" alt="Public work: 4,152 lines of code, 263 tracked files, 227 non-bot commits in 90 days, 12 repositories. Topic counts: DFIR: 3, Threat hunting: 1, Automation: 2, Cloud security: 1, Network analysis: 2." />
+<img src="assets/dashboard.svg?v=20261023151334" width="900" alt="Public work: 4,152 lines of code, 263 tracked files, 227 non-bot commits in 90 days, 12 repositories. Topic counts: DFIR: 3, Threat hunting: 1, Automation: 2, Cloud security: 1, Network analysis: 2." />
 
 ### Tools I work with
 
