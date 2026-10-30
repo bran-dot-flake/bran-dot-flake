@@ -1,6 +1,6 @@
 {
-  "updated": "Oct 29, 2026",
-  "collected_at": "2026-10-29T16:59:29.017835+00:00",
+  "updated": "Oct 30, 2026",
+  "collected_at": "2026-10-30T16:44:58.626608+00:00",
   "repos": [
     {
       "name": "Automated-SOC-Pipeline-Using-Wazuh-Shuffle-and-TheHive",
@@ -33,7 +33,7 @@
         "github-pages",
         "portfolio"
       ],
-      "pushed_at": "2026-10-29T16:58:51Z",
+      "pushed_at": "2026-10-30T16:43:56Z",
       "stargazers_count": 0
     },
     {
@@ -55,6 +55,12 @@
         "sql"
       ],
       "pushed_at": "2026-10-07T17:29:32Z",
+      "stargazers_count": 0
+    },
+    {
+      "name": "Malware-Analysis-And-Rule-Lab",
+      "topics": [],
+      "pushed_at": "2026-10-30T13:53:06Z",
       "stargazers_count": 0
     },
     {
@@ -276,7 +282,7 @@
     {
       "name": "bran-dot-flake.github.io",
       "languages": {
-        "JavaScript": 1804,
+        "JavaScript": 1814,
         "CSS": 603,
         "Python": 504,
         "HTML": 281
@@ -439,6 +445,43 @@
         {
           "sha": "ef91d5a1245cb3f13017a6acb36e875013badd47",
           "date": "2026-08-10T12:20:42Z"
+        }
+      ]
+    },
+    {
+      "name": "Malware-Analysis-And-Rule-Lab",
+      "languages": {
+        "Python": 1129
+      },
+      "files": 3,
+      "commits": [
+        {
+          "sha": "2a46a843a43af53a43c452138aab881448078de2",
+          "date": "2026-10-30T13:53:05Z"
+        },
+        {
+          "sha": "a845c90ee5cd245e6a69c7ce56379f7425c89125",
+          "date": "2026-10-30T13:52:52Z"
+        },
+        {
+          "sha": "632db23d9b048b3ac057d1ec5fc2b011f62e1b17",
+          "date": "2026-09-30T19:18:19Z"
+        },
+        {
+          "sha": "f0f5ee8d5d20e5e84843f92c91cbd908b3119867",
+          "date": "2026-09-30T19:17:14Z"
+        },
+        {
+          "sha": "54b61fb987598bf7928863cc28c03ca7b8ad25fe",
+          "date": "2026-09-30T19:16:27Z"
+        },
+        {
+          "sha": "826b572f2f69d38ea5b14f0f48b74a5c817d300c",
+          "date": "2026-09-30T19:15:13Z"
+        },
+        {
+          "sha": "0aaf62638fe7de1c82443eef759c308853fae6c0",
+          "date": "2026-09-30T18:41:23Z"
         }
       ]
     },
