@@ -1,7 +1,13 @@
 {
-  "updated": "Nov 02, 2026",
-  "collected_at": "2026-11-02T20:25:45.157364+00:00",
+  "updated": "Nov 03, 2026",
+  "collected_at": "2026-11-03T17:55:47.018501+00:00",
   "repos": [
+    {
+      "name": "Agent-Tesla-Malware-Analysis-and-Detection-Engineering",
+      "topics": [],
+      "pushed_at": "2026-11-03T15:26:38Z",
+      "stargazers_count": 0
+    },
     {
       "name": "Automated-SOC-Pipeline-Using-Wazuh-Shuffle-and-TheHive",
       "topics": [
@@ -33,7 +39,7 @@
         "github-pages",
         "portfolio"
       ],
-      "pushed_at": "2026-11-02T20:25:06Z",
+      "pushed_at": "2026-11-03T17:54:55Z",
       "stargazers_count": 0
     },
     {
@@ -55,12 +61,6 @@
         "sql"
       ],
       "pushed_at": "2026-10-07T17:29:32Z",
-      "stargazers_count": 0
-    },
-    {
-      "name": "Malware-Analysis-And-Rule-Lab",
-      "topics": [],
-      "pushed_at": "2026-10-30T13:53:06Z",
       "stargazers_count": 0
     },
     {
@@ -144,51 +144,175 @@
   ],
   "scans": [
     {
+      "name": "Agent-Tesla-Malware-Analysis-and-Detection-Engineering",
+      "languages": {
+        "Python": 1129
+      },
+      "files": 10,
+      "commits": [
+        {
+          "sha": "3e242058963998a37b9d46971ad944f9615efbc9",
+          "date": "2026-11-03T15:26:38Z"
+        },
+        {
+          "sha": "b67c384e8f5ec7314fe3a969a311b3cfa0366978",
+          "date": "2026-11-03T15:22:20Z"
+        },
+        {
+          "sha": "aefac12c619979e526c6bd357f80719f9a5a6e89",
+          "date": "2026-11-03T15:17:12Z"
+        },
+        {
+          "sha": "fe3b0deb397ab6fe13b7afc0a1fb9c3d698f41ab",
+          "date": "2026-11-03T15:16:21Z"
+        },
+        {
+          "sha": "a51b61cf90397b1dcb336c43042d8ebfb5c80900",
+          "date": "2026-11-03T15:15:46Z"
+        },
+        {
+          "sha": "38db1c8f779681b9aaf3b378ec5793359db3cd66",
+          "date": "2026-11-03T15:13:37Z"
+        },
+        {
+          "sha": "1c400db155b27da71f2af6aad243dfc8d49b203c",
+          "date": "2026-11-03T15:04:19Z"
+        },
+        {
+          "sha": "4a2c2c078950533dbaf270a2dee65f7be09c9077",
+          "date": "2026-11-03T14:46:31Z"
+        },
+        {
+          "sha": "90c014f96e83e4584bfbb8b1680a1ee48988eb12",
+          "date": "2026-11-03T14:46:12Z"
+        },
+        {
+          "sha": "7fc670a4e6fd8ab4447e3e2819e6c51f208d6cad",
+          "date": "2026-11-03T14:44:55Z"
+        },
+        {
+          "sha": "17316b548daa7e9da67a1cb3b24b5f26fde62204",
+          "date": "2026-11-03T14:44:36Z"
+        },
+        {
+          "sha": "8e7865a20d1de5a633b9dc440165feeb08804474",
+          "date": "2026-11-03T14:43:32Z"
+        },
+        {
+          "sha": "8d46756f1d1ccb596c8e43841c93f631c832b0ec",
+          "date": "2026-11-03T14:42:22Z"
+        },
+        {
+          "sha": "8b193ede3696445bae0ff2d5869c983392af6e98",
+          "date": "2026-11-03T14:42:11Z"
+        },
+        {
+          "sha": "d0c0f701bfefbb4b6328e28520a403d4f443945c",
+          "date": "2026-11-03T14:41:43Z"
+        },
+        {
+          "sha": "17d5f51f3f3f412c7297a031b150fdb023a756f6",
+          "date": "2026-11-03T14:41:25Z"
+        },
+        {
+          "sha": "bbcd430e2b25ed70e6829a32cc8b4a21d48cb65a",
+          "date": "2026-11-03T14:41:08Z"
+        },
+        {
+          "sha": "1d83693221d55d314a9aa7ec4c59831a96c59893",
+          "date": "2026-11-03T14:40:40Z"
+        },
+        {
+          "sha": "bb304ccda4ee75c79044af82e5996bd017354f5c",
+          "date": "2026-11-03T14:40:26Z"
+        },
+        {
+          "sha": "9c024d2ba9a472def9cdb7a694dc57b94c0054f8",
+          "date": "2026-11-03T14:40:13Z"
+        },
+        {
+          "sha": "5724217e32999817f08c7b043bdfc56eb9f881a5",
+          "date": "2026-11-03T14:39:34Z"
+        },
+        {
+          "sha": "ce7c91365d18c6981bb96175ea946af0cbbf0557",
+          "date": "2026-11-03T14:39:20Z"
+        },
+        {
+          "sha": "f8cce711bd75eaf546a5e9981db3925e9876a8de",
+          "date": "2026-11-03T14:39:01Z"
+        },
+        {
+          "sha": "f07379b7b3f2285ae9a048a91e42766247046233",
+          "date": "2026-11-03T14:38:51Z"
+        },
+        {
+          "sha": "3375565f75fce40900241161d09170cdad156e7f",
+          "date": "2026-11-03T14:38:39Z"
+        },
+        {
+          "sha": "0cc700a5e228279aa2feab79632a062e23381e93",
+          "date": "2026-11-03T14:38:01Z"
+        },
+        {
+          "sha": "b5d86297a04b18f4099f399af17f7fd530040013",
+          "date": "2026-11-03T14:37:45Z"
+        },
+        {
+          "sha": "81077d2975dd5a8b17f467b38a692b82bb885470",
+          "date": "2026-11-03T14:37:32Z"
+        },
+        {
+          "sha": "91f6f66b92fae7e44a6be7b3d4fb5fdac51740eb",
+          "date": "2026-11-03T14:37:05Z"
+        },
+        {
+          "sha": "d203c31f9d76283327c758f9bf5f2a8853cccb03",
+          "date": "2026-11-03T14:36:28Z"
+        },
+        {
+          "sha": "391a9bb9649f3e7b7f04827e4d8bea3b0b17588b",
+          "date": "2026-11-03T14:36:02Z"
+        },
+        {
+          "sha": "c2547ee5116a89acd30fed9ff336ef4fa4fc4efd",
+          "date": "2026-11-03T14:35:36Z"
+        },
+        {
+          "sha": "2a46a843a43af53a43c452138aab881448078de2",
+          "date": "2026-10-30T13:53:05Z"
+        },
+        {
+          "sha": "a845c90ee5cd245e6a69c7ce56379f7425c89125",
+          "date": "2026-10-30T13:52:52Z"
+        },
+        {
+          "sha": "632db23d9b048b3ac057d1ec5fc2b011f62e1b17",
+          "date": "2026-09-30T19:18:19Z"
+        },
+        {
+          "sha": "f0f5ee8d5d20e5e84843f92c91cbd908b3119867",
+          "date": "2026-09-30T19:17:14Z"
+        },
+        {
+          "sha": "54b61fb987598bf7928863cc28c03ca7b8ad25fe",
+          "date": "2026-09-30T19:16:27Z"
+        },
+        {
+          "sha": "826b572f2f69d38ea5b14f0f48b74a5c817d300c",
+          "date": "2026-09-30T19:15:13Z"
+        },
+        {
+          "sha": "0aaf62638fe7de1c82443eef759c308853fae6c0",
+          "date": "2026-09-30T18:41:23Z"
+        }
+      ]
+    },
+    {
       "name": "Automated-SOC-Pipeline-Using-Wazuh-Shuffle-and-TheHive",
       "languages": {},
       "files": 35,
-      "commits": [
-        {
-          "sha": "dc22df70e2175e6f283f45448e0f6476e8391463",
-          "date": "2026-08-04T20:18:01Z"
-        },
-        {
-          "sha": "397fc06cb87a7a719d8b6d604894fd63efdeb009",
-          "date": "2026-08-04T19:37:11Z"
-        },
-        {
-          "sha": "3c0d71374cf1c08abe2277cc43b79db9640095c7",
-          "date": "2026-08-04T19:04:13Z"
-        },
-        {
-          "sha": "0ad348f75d366c645543e56a8e403f623e8feba3",
-          "date": "2026-08-04T16:59:06Z"
-        },
-        {
-          "sha": "f78c13eb94708674b70560282a44f803c7098f98",
-          "date": "2026-08-04T13:28:52Z"
-        },
-        {
-          "sha": "5097ededfe04b99547f313bd03aaff8568a7e16d",
-          "date": "2026-08-04T13:27:52Z"
-        },
-        {
-          "sha": "02f6f675687f706b5b96da1a5403f17812139cf8",
-          "date": "2026-08-04T13:27:34Z"
-        },
-        {
-          "sha": "d508765e32aa16ca70d69f1622524b787a0b7eaf",
-          "date": "2026-08-04T13:22:23Z"
-        },
-        {
-          "sha": "fe0bccf719a460d3c0ae07504b52b00959dff05b",
-          "date": "2026-08-04T13:17:39Z"
-        },
-        {
-          "sha": "8dde415ea7a17f7af3a11164eb396c2d8b5b51e2",
-          "date": "2026-08-04T12:55:54Z"
-        }
-      ]
+      "commits": []
     },
     {
       "name": "Bedside-Hack-The-Box-Writeup",
@@ -445,43 +569,6 @@
         {
           "sha": "ef91d5a1245cb3f13017a6acb36e875013badd47",
           "date": "2026-08-10T12:20:42Z"
-        }
-      ]
-    },
-    {
-      "name": "Malware-Analysis-And-Rule-Lab",
-      "languages": {
-        "Python": 1129
-      },
-      "files": 3,
-      "commits": [
-        {
-          "sha": "2a46a843a43af53a43c452138aab881448078de2",
-          "date": "2026-10-30T13:53:05Z"
-        },
-        {
-          "sha": "a845c90ee5cd245e6a69c7ce56379f7425c89125",
-          "date": "2026-10-30T13:52:52Z"
-        },
-        {
-          "sha": "632db23d9b048b3ac057d1ec5fc2b011f62e1b17",
-          "date": "2026-09-30T19:18:19Z"
-        },
-        {
-          "sha": "f0f5ee8d5d20e5e84843f92c91cbd908b3119867",
-          "date": "2026-09-30T19:17:14Z"
-        },
-        {
-          "sha": "54b61fb987598bf7928863cc28c03ca7b8ad25fe",
-          "date": "2026-09-30T19:16:27Z"
-        },
-        {
-          "sha": "826b572f2f69d38ea5b14f0f48b74a5c817d300c",
-          "date": "2026-09-30T19:15:13Z"
-        },
-        {
-          "sha": "0aaf62638fe7de1c82443eef759c308853fae6c0",
-          "date": "2026-09-30T18:41:23Z"
         }
       ]
     },
