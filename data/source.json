@@ -1,11 +1,11 @@
 {
-  "updated": "Nov 04, 2026",
-  "collected_at": "2026-11-04T18:06:07.550198+00:00",
+  "updated": "Nov 05, 2026",
+  "collected_at": "2026-11-05T18:07:49.298168+00:00",
   "repos": [
     {
       "name": "Agent-Tesla-Malware-Analysis-and-Detection-Engineering",
       "topics": [],
-      "pushed_at": "2026-11-03T15:26:38Z",
+      "pushed_at": "2026-11-04T20:55:23Z",
       "stargazers_count": 0
     },
     {
@@ -39,7 +39,7 @@
         "github-pages",
         "portfolio"
       ],
-      "pushed_at": "2026-11-04T18:04:05Z",
+      "pushed_at": "2026-11-05T18:07:12Z",
       "stargazers_count": 0
     },
     {
@@ -148,8 +148,52 @@
       "languages": {
         "Python": 1129
       },
-      "files": 10,
+      "files": 32,
       "commits": [
+        {
+          "sha": "c6feb8aa4a067bd4a7829a0e29f69388fe831fc2",
+          "date": "2026-11-04T20:55:23Z"
+        },
+        {
+          "sha": "1ec9b4104623f9b37510af40423a7dad047963c0",
+          "date": "2026-11-04T20:52:48Z"
+        },
+        {
+          "sha": "80137197522d92d14153905e7dfd3188e64b2547",
+          "date": "2026-11-04T20:50:13Z"
+        },
+        {
+          "sha": "3247450d71d57a9b34e23923318a4bbc02c5a36e",
+          "date": "2026-11-04T20:49:08Z"
+        },
+        {
+          "sha": "004252dc83e9d0b8e1249dc2fa6bdc6c1acdb477",
+          "date": "2026-11-04T20:48:00Z"
+        },
+        {
+          "sha": "05c27a5e0d6dc0ff7f3adde14077b0c5e96270bd",
+          "date": "2026-11-04T20:44:33Z"
+        },
+        {
+          "sha": "ec7f81ad2e1142e27e248ad6c6a21392adfb19b2",
+          "date": "2026-11-04T20:37:50Z"
+        },
+        {
+          "sha": "85732d788300061cb0d55a1c46b3c9950ebcad9d",
+          "date": "2026-11-04T20:34:47Z"
+        },
+        {
+          "sha": "06deb91edbeb9891d3af1bf9466bd828d0421254",
+          "date": "2026-11-04T20:27:26Z"
+        },
+        {
+          "sha": "2d863087ab28a948ac450ef59914822445e57d18",
+          "date": "2026-11-04T20:18:21Z"
+        },
+        {
+          "sha": "ae56197870e094f961b53cb47fefc6a356143ee3",
+          "date": "2026-11-04T19:42:46Z"
+        },
         {
           "sha": "3e242058963998a37b9d46971ad944f9615efbc9",
           "date": "2026-11-03T15:26:38Z"
