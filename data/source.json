@@ -1,11 +1,16 @@
 {
-  "updated": "Nov 05, 2026",
-  "collected_at": "2026-11-05T18:07:49.298168+00:00",
+  "updated": "Nov 06, 2026",
+  "collected_at": "2026-11-06T17:35:04.333596+00:00",
   "repos": [
     {
       "name": "Agent-Tesla-Malware-Analysis-and-Detection-Engineering",
-      "topics": [],
-      "pushed_at": "2026-11-04T20:55:23Z",
+      "topics": [
+        "malware-analysis",
+        "reverse-eningeering",
+        "sigma",
+        "yara"
+      ],
+      "pushed_at": "2026-11-05T20:07:05Z",
       "stargazers_count": 0
     },
     {
@@ -39,7 +44,7 @@
         "github-pages",
         "portfolio"
       ],
-      "pushed_at": "2026-11-05T18:07:12Z",
+      "pushed_at": "2026-11-06T17:33:52Z",
       "stargazers_count": 0
     },
     {
@@ -61,6 +66,12 @@
         "sql"
       ],
       "pushed_at": "2026-10-07T17:29:32Z",
+      "stargazers_count": 0
+    },
+    {
+      "name": "Detection-as-Code-Pipeline",
+      "topics": [],
+      "pushed_at": "2026-11-05T20:49:16Z",
       "stargazers_count": 0
     },
     {
@@ -148,8 +159,52 @@
       "languages": {
         "Python": 1129
       },
-      "files": 32,
+      "files": 42,
       "commits": [
+        {
+          "sha": "a531a10c6523d3e5be5910d9132a94c12e83de5a",
+          "date": "2026-11-05T20:07:05Z"
+        },
+        {
+          "sha": "423cf5ac8566d8f7797b3a9ce9163d6ddd760f42",
+          "date": "2026-11-05T20:02:48Z"
+        },
+        {
+          "sha": "20e566a62bf068cdd6a28fa4e832cdb79f1afb35",
+          "date": "2026-11-05T20:01:51Z"
+        },
+        {
+          "sha": "e731dfe69541acea6df0e3011f95717778a59bc4",
+          "date": "2026-11-05T19:57:19Z"
+        },
+        {
+          "sha": "948ec58b07fdfbb0bcbed0384f22b98633034829",
+          "date": "2026-11-05T19:51:09Z"
+        },
+        {
+          "sha": "54d49300f94044cb1c858f54bf8a4709c3b7b56a",
+          "date": "2026-11-05T19:49:49Z"
+        },
+        {
+          "sha": "d1f956e9404ffe7283f1515c72604f0380522129",
+          "date": "2026-11-05T19:49:24Z"
+        },
+        {
+          "sha": "729a5aeca20a88cd56fdb8bfb0bb0b6714c243d7",
+          "date": "2026-11-05T19:47:09Z"
+        },
+        {
+          "sha": "89da5acc6c057e53e92408b2531b89e27ca6ac4c",
+          "date": "2026-11-05T19:46:36Z"
+        },
+        {
+          "sha": "6fffe6d105e33c927aabbda0791fdbaff23ea8ad",
+          "date": "2026-11-05T19:30:05Z"
+        },
+        {
+          "sha": "1351d9188b85d526cd7e2cafeb65c1c67dc30016",
+          "date": "2026-11-05T18:59:16Z"
+        },
         {
           "sha": "c6feb8aa4a067bd4a7829a0e29f69388fe831fc2",
           "date": "2026-11-04T20:55:23Z"
@@ -450,13 +505,17 @@
     {
       "name": "bran-dot-flake.github.io",
       "languages": {
-        "JavaScript": 1814,
-        "CSS": 603,
+        "JavaScript": 1833,
+        "CSS": 604,
         "Python": 504,
         "HTML": 281
       },
-      "files": 97,
+      "files": 98,
       "commits": [
+        {
+          "sha": "d80af82f1e68e79b334e00a1e99d6672db27b121",
+          "date": "2026-11-05T20:38:02Z"
+        },
         {
           "sha": "8eeb527bca40df90400b31f3e70e277cd263d058",
           "date": "2026-10-25T01:48:55Z"
@@ -615,6 +674,12 @@
           "date": "2026-08-10T12:20:42Z"
         }
       ]
+    },
+    {
+      "name": "Detection-as-Code-Pipeline",
+      "languages": {},
+      "files": 0,
+      "commits": []
     },
     {
       "name": "Network-Traffic-Analysis-with-Wireshark",

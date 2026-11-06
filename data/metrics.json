@@ -1,17 +1,17 @@
 {
-  "updated": "Nov 05, 2026",
-  "lines_of_code": 5252,
-  "tracked_files": 319,
-  "commits_90d": 269,
-  "repositories": 13,
+  "updated": "Nov 06, 2026",
+  "lines_of_code": 5272,
+  "tracked_files": 330,
+  "commits_90d": 281,
+  "repositories": 14,
   "languages": {
     "Python": 2554,
-    "JavaScript": 1814,
-    "CSS": 603,
+    "JavaScript": 1833,
+    "CSS": 604,
     "HTML": 281
   },
   "specializations": {
-    "DFIR": 3,
+    "DFIR": 4,
     "Threat hunting": 1,
     "Automation": 2,
     "Cloud security": 1,
