@@ -1,6 +1,6 @@
 {
-  "updated": "Nov 07, 2026",
-  "collected_at": "2026-11-07T16:33:26.679482+00:00",
+  "updated": "Nov 08, 2026",
+  "collected_at": "2026-11-08T16:44:25.814260+00:00",
   "repos": [
     {
       "name": "Agent-Tesla-Malware-Analysis-and-Detection-Engineering",
@@ -44,7 +44,7 @@
         "github-pages",
         "portfolio"
       ],
-      "pushed_at": "2026-11-07T16:31:49Z",
+      "pushed_at": "2026-11-08T16:43:34Z",
       "stargazers_count": 0
     },
     {
@@ -664,14 +664,6 @@
         {
           "sha": "53809cc4670b329ebe19c475f605fd0cd9f52103",
           "date": "2026-08-10T17:22:44Z"
-        },
-        {
-          "sha": "9ec904bf3c58d8e10a8de5e98cf51bea27568001",
-          "date": "2026-08-10T13:08:56Z"
-        },
-        {
-          "sha": "ef91d5a1245cb3f13017a6acb36e875013badd47",
-          "date": "2026-08-10T12:20:42Z"
         }
       ]
     },
