@@ -1,18 +1,18 @@
 {
-  "updated": "Nov 08, 2026",
-  "lines_of_code": 5272,
-  "tracked_files": 330,
-  "commits_90d": 279,
-  "repositories": 14,
+  "updated": "Nov 09, 2026",
+  "lines_of_code": 6777,
+  "tracked_files": 379,
+  "commits_90d": 305,
+  "repositories": 15,
   "languages": {
-    "Python": 2554,
-    "JavaScript": 1833,
-    "CSS": 604,
+    "Python": 4039,
+    "JavaScript": 1852,
+    "CSS": 605,
     "HTML": 281
   },
   "specializations": {
     "DFIR": 4,
-    "Threat hunting": 1,
+    "Threat hunting": 2,
     "Automation": 2,
     "Cloud security": 1,
     "Network analysis": 2

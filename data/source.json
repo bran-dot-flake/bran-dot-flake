@@ -1,6 +1,6 @@
 {
-  "updated": "Nov 08, 2026",
-  "collected_at": "2026-11-08T16:44:25.814260+00:00",
+  "updated": "Nov 09, 2026",
+  "collected_at": "2026-11-09T20:52:41.534530+00:00",
   "repos": [
     {
       "name": "Agent-Tesla-Malware-Analysis-and-Detection-Engineering",
@@ -44,7 +44,7 @@
         "github-pages",
         "portfolio"
       ],
-      "pushed_at": "2026-11-08T16:43:34Z",
+      "pushed_at": "2026-11-09T20:51:00Z",
       "stargazers_count": 0
     },
     {
@@ -70,8 +70,18 @@
     },
     {
       "name": "Detection-as-Code-Pipeline",
+      "topics": [
+        "detection-as-code",
+        "security-automation",
+        "splunk"
+      ],
+      "pushed_at": "2026-11-09T19:03:00Z",
+      "stargazers_count": 0
+    },
+    {
+      "name": "LLM-Prompt-Injection",
       "topics": [],
-      "pushed_at": "2026-11-05T20:49:16Z",
+      "pushed_at": "2026-11-09T20:12:33Z",
       "stargazers_count": 0
     },
     {
@@ -505,13 +515,17 @@
     {
       "name": "bran-dot-flake.github.io",
       "languages": {
-        "JavaScript": 1833,
-        "CSS": 604,
+        "JavaScript": 1852,
+        "CSS": 605,
         "Python": 504,
         "HTML": 281
       },
-      "files": 98,
+      "files": 99,
       "commits": [
+        {
+          "sha": "85a147993235ff90dc82915892f72d30283fd5fc",
+          "date": "2026-11-09T17:31:31Z"
+        },
         {
           "sha": "d80af82f1e68e79b334e00a1e99d6672db27b121",
           "date": "2026-11-05T20:38:02Z"
@@ -591,26 +605,6 @@
         {
           "sha": "1f1d2edad568a8153eb9b25df15722e51c0e5955",
           "date": "2026-09-23T15:15:03Z"
-        },
-        {
-          "sha": "d0ee6c9a2ce1fa0b410833ec44696a5424123d72",
-          "date": "2026-08-11T19:53:57Z"
-        },
-        {
-          "sha": "13d0a93225a98c6872867a12722c72ae67b2c646",
-          "date": "2026-08-11T19:33:50Z"
-        },
-        {
-          "sha": "38a2ea11230e7f71307e96397e27a9de8e18f37d",
-          "date": "2026-08-11T19:27:27Z"
-        },
-        {
-          "sha": "4497ee0a7c7f8569e8d49629385b73fbeb6df794",
-          "date": "2026-08-11T19:20:12Z"
-        },
-        {
-          "sha": "0edb0882c932cb11bf7c543b94c8d55f2ed8403e",
-          "date": "2026-08-11T19:19:55Z"
         }
       ]
     },
@@ -636,39 +630,168 @@
         {
           "sha": "17607d5eec8eb4602e9830be732f1bb379f097cb",
           "date": "2026-10-07T17:28:43Z"
-        },
-        {
-          "sha": "f64fc750f3eb5f75396c54e07f23be85d100b237",
-          "date": "2026-08-10T19:31:31Z"
-        },
-        {
-          "sha": "56b34e7e615aebd63159e8b71af6998b70d3bbf7",
-          "date": "2026-08-10T19:20:48Z"
-        },
-        {
-          "sha": "186714535207dc6e1417d3414e0a1662489a9756",
-          "date": "2026-08-10T18:53:49Z"
-        },
-        {
-          "sha": "cf882d3e8452be2741b53d2563e5e70298e7867d",
-          "date": "2026-08-10T18:44:49Z"
-        },
-        {
-          "sha": "a385507375e064a7de7852a85a54a6084001a240",
-          "date": "2026-08-10T18:44:20Z"
-        },
-        {
-          "sha": "0451bb1d43d593ac70539a31b82a1bc1c336b0f3",
-          "date": "2026-08-10T18:36:49Z"
-        },
-        {
-          "sha": "53809cc4670b329ebe19c475f605fd0cd9f52103",
-          "date": "2026-08-10T17:22:44Z"
         }
       ]
     },
     {
       "name": "Detection-as-Code-Pipeline",
+      "languages": {
+        "Python": 1485
+      },
+      "files": 48,
+      "commits": [
+        {
+          "sha": "3f27b338ea21f787aa15edfdeca74ee09626dedf",
+          "date": "2026-11-09T19:03:00Z"
+        },
+        {
+          "sha": "18e475b8dcde287059813151dcb87ca4c2c1cde5",
+          "date": "2026-11-09T18:59:22Z"
+        },
+        {
+          "sha": "230c0ace7a1b7edba309e42c1587a4d6307f460d",
+          "date": "2026-11-09T18:53:25Z"
+        },
+        {
+          "sha": "5f0b49a629700427b2f9afde451b418c0ab31432",
+          "date": "2026-11-09T18:44:35Z"
+        },
+        {
+          "sha": "37ff0480c71c368509a6eda63d9929bd22000c35",
+          "date": "2026-11-09T18:37:52Z"
+        },
+        {
+          "sha": "248c89bcb6a908b1b02d895235b498f4e4b5353e",
+          "date": "2026-11-09T17:31:17Z"
+        },
+        {
+          "sha": "fe3b35d44c47c6ddb0422a869b0220d33f3e450d",
+          "date": "2026-11-09T17:18:44Z"
+        },
+        {
+          "sha": "84904495152bd006a0ff987d3156abc11c739d3f",
+          "date": "2026-11-09T17:07:43Z"
+        },
+        {
+          "sha": "89d9df0c59fed0514d733c59ec111943cd81d1b4",
+          "date": "2026-11-09T17:04:57Z"
+        },
+        {
+          "sha": "a76f28ecffdf6ef69e51471415b80d5fc39beeba",
+          "date": "2026-11-09T16:51:12Z"
+        },
+        {
+          "sha": "c3a3152d6dc7bdd61ad59a24ba5ac01a35d0ed59",
+          "date": "2026-11-09T16:44:08Z"
+        },
+        {
+          "sha": "cf1b6fde1ddad55a78e6ea60b98b01e61ddeda27",
+          "date": "2026-11-09T16:35:47Z"
+        },
+        {
+          "sha": "c3cd85f6d978691f53b84db3e952436ab3e4e724",
+          "date": "2026-11-09T16:24:47Z"
+        },
+        {
+          "sha": "5c1e243018c8197a7396cc835c01e7e9f7407d72",
+          "date": "2026-11-09T16:12:11Z"
+        },
+        {
+          "sha": "bfbf455cb875e49161e0ef126b50c06ae9ac276e",
+          "date": "2026-11-09T16:12:08Z"
+        },
+        {
+          "sha": "5a2cdc0026c31fbb473bd87263ff1d574c3156da",
+          "date": "2026-11-09T16:12:06Z"
+        },
+        {
+          "sha": "88ccca1471bb93d988e3e532a0b2a93cd0f8b556",
+          "date": "2026-11-09T16:02:29Z"
+        },
+        {
+          "sha": "11f7dc9256f64221a2e724b398abbb31fc3883b9",
+          "date": "2026-11-09T16:02:02Z"
+        },
+        {
+          "sha": "ba044882b29e9559ce704b75260d98105622c7fb",
+          "date": "2026-11-09T15:52:55Z"
+        },
+        {
+          "sha": "3e726911500b91cd2c2728b2536249cf2577b848",
+          "date": "2026-11-09T15:52:52Z"
+        },
+        {
+          "sha": "8546bf9b66990350e71243a9dfb8a09edc6d9232",
+          "date": "2026-11-09T15:38:20Z"
+        },
+        {
+          "sha": "40c00932c471323962dbb977a30eff1f987cf037",
+          "date": "2026-11-09T15:34:48Z"
+        },
+        {
+          "sha": "4f230f1e2c0b6b3c496fc0c26a60bbae9283301e",
+          "date": "2026-11-09T15:29:57Z"
+        },
+        {
+          "sha": "e38eb27903220daea81d30f0530735aaea49809c",
+          "date": "2026-11-09T15:23:45Z"
+        },
+        {
+          "sha": "91ced1f36edd43e8e34577c3274edcfcb2642ac4",
+          "date": "2026-11-09T15:23:31Z"
+        },
+        {
+          "sha": "36914e489f51ccc9c92e2bcbcce24168f894d48f",
+          "date": "2026-11-09T15:23:15Z"
+        },
+        {
+          "sha": "3a211fd8693435422ff3c9d01321b13b6ac1a2c0",
+          "date": "2026-11-09T15:19:33Z"
+        },
+        {
+          "sha": "e99903ba8336b9cb9308d98cb733da51bf895623",
+          "date": "2026-11-09T14:12:53Z"
+        },
+        {
+          "sha": "778b7c56c7c7da0c7ccf0f5d50ff6d423fe33df2",
+          "date": "2026-11-09T14:08:12Z"
+        },
+        {
+          "sha": "933de84de8cbdff2a0914a9e8fc86ac2adf015d5",
+          "date": "2026-11-09T13:59:46Z"
+        },
+        {
+          "sha": "ed9028517d28e1d6dcb082a10ea54dfc2b9f5c2c",
+          "date": "2026-11-09T13:59:44Z"
+        },
+        {
+          "sha": "6ed7033a8081eaebd5ea9e4995c158f7fd9be2fe",
+          "date": "2026-11-09T13:59:42Z"
+        },
+        {
+          "sha": "8b536267f972aaee240d181fb6c8b695d1afdfcd",
+          "date": "2026-11-09T13:58:45Z"
+        },
+        {
+          "sha": "948eb21e8af1f903e9251430a8e880ff54f72c56",
+          "date": "2026-11-09T13:57:44Z"
+        },
+        {
+          "sha": "2c173882e85c9b019f90911116f678ae5fc3eb0f",
+          "date": "2026-11-09T13:45:24Z"
+        },
+        {
+          "sha": "42eabdffd9e0da37cb4ce1c4a730e620093c3d41",
+          "date": "2026-11-09T13:43:59Z"
+        },
+        {
+          "sha": "5cff46083377917008ed52f3ab4c814aea6646df",
+          "date": "2026-11-05T20:49:16Z"
+        }
+      ]
+    },
+    {
+      "name": "LLM-Prompt-Injection",
       "languages": {},
       "files": 0,
       "commits": []
