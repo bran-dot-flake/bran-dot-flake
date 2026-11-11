@@ -1,6 +1,6 @@
 {
-  "updated": "Nov 10, 2026",
-  "collected_at": "2026-11-10T17:58:50.048704+00:00",
+  "updated": "Nov 11, 2026",
+  "collected_at": "2026-11-11T17:57:00.462629+00:00",
   "repos": [
     {
       "name": "Agent-Tesla-Malware-Analysis-and-Detection-Engineering",
@@ -44,7 +44,7 @@
         "github-pages",
         "portfolio"
       ],
-      "pushed_at": "2026-11-10T17:57:32Z",
+      "pushed_at": "2026-11-11T17:56:26Z",
       "stargazers_count": 0
     },
     {
@@ -85,7 +85,7 @@
         "llm-security",
         "prompt-injection"
       ],
-      "pushed_at": "2026-11-10T17:53:16Z",
+      "pushed_at": "2026-11-10T21:30:48Z",
       "stargazers_count": 0
     },
     {
@@ -140,6 +140,12 @@
         "sentinel"
       ],
       "pushed_at": "2026-06-09T18:00:44Z",
+      "stargazers_count": 0
+    },
+    {
+      "name": "STIX-TAXII-Threat-Intel-Automated-Summary",
+      "topics": [],
+      "pushed_at": "2026-11-11T17:44:14Z",
       "stargazers_count": 0
     },
     {
@@ -519,7 +525,7 @@
     {
       "name": "bran-dot-flake.github.io",
       "languages": {
-        "JavaScript": 1852,
+        "JavaScript": 1862,
         "CSS": 605,
         "Python": 504,
         "HTML": 281
@@ -801,6 +807,50 @@
       },
       "files": 44,
       "commits": [
+        {
+          "sha": "a8ca7f2971771b413542cd1d81c3cdf7ce849fd3",
+          "date": "2026-11-10T21:30:48Z"
+        },
+        {
+          "sha": "69e2947c0fad8cc0f19f68c28c875305fa2ed85d",
+          "date": "2026-11-10T21:27:43Z"
+        },
+        {
+          "sha": "4a4981989aca59a3b2ae66425ab5642c03ca26e1",
+          "date": "2026-11-10T21:22:45Z"
+        },
+        {
+          "sha": "a6ec17284636c218b3943a6c9984e961e194b0a3",
+          "date": "2026-11-10T21:19:01Z"
+        },
+        {
+          "sha": "9a5cdfc80d3260a0afd9167224217588f73d0a95",
+          "date": "2026-11-10T21:17:00Z"
+        },
+        {
+          "sha": "1cb17b087d23a34eac6ca10f79de5b5b16efa3e9",
+          "date": "2026-11-10T21:10:23Z"
+        },
+        {
+          "sha": "fbf1486df739d07791a13916ac457a9f3fba05c9",
+          "date": "2026-11-10T18:30:59Z"
+        },
+        {
+          "sha": "52b271e30c78dfc5f9d7b70208ae1e08a73c3ce8",
+          "date": "2026-11-10T18:16:03Z"
+        },
+        {
+          "sha": "9195e2c5c070b334007cbc85a16d57e6b36bb60c",
+          "date": "2026-11-10T18:14:12Z"
+        },
+        {
+          "sha": "1e4956bf001651dbcc4aecde96df263cecbbfdf6",
+          "date": "2026-11-10T18:09:38Z"
+        },
+        {
+          "sha": "2b6e000a876dcf244214918325b7cd237f1cc199",
+          "date": "2026-11-10T18:00:20Z"
+        },
         {
           "sha": "2b3a95ae08f11f87695252b8cce9856d144d115a",
           "date": "2026-11-10T17:53:16Z"
@@ -1351,22 +1401,6 @@
         {
           "sha": "3cab7fbaece34cf558e0246a498061bab5e023de",
           "date": "2026-08-13T18:49:01Z"
-        },
-        {
-          "sha": "b827520c673aa0bce3f4f06582a17b8485d08f9d",
-          "date": "2026-08-13T17:35:56Z"
-        },
-        {
-          "sha": "49abf8974b05311733a4985f94161a8b104dc5a7",
-          "date": "2026-08-13T17:34:07Z"
-        },
-        {
-          "sha": "f6a8f5d2a7f0c568f60f1ad600751a2b68eae187",
-          "date": "2026-08-13T17:30:53Z"
-        },
-        {
-          "sha": "961a81bf3e4156994aa916ef7912be0d7300f0b1",
-          "date": "2026-08-13T17:11:56Z"
         }
       ]
     },
@@ -1458,6 +1492,82 @@
       "languages": {},
       "files": 18,
       "commits": []
+    },
+    {
+      "name": "STIX-TAXII-Threat-Intel-Automated-Summary",
+      "languages": {
+        "Python": 4702,
+        "JavaScript": 368,
+        "CSS": 258,
+        "HTML": 29
+      },
+      "files": 75,
+      "commits": [
+        {
+          "sha": "f4728dfd4d8a60726e2dfc44146d68355ed95410",
+          "date": "2026-11-11T17:43:41Z"
+        },
+        {
+          "sha": "0a95d05c342fe2736aab58369dfbef8594553eb1",
+          "date": "2026-11-11T17:42:26Z"
+        },
+        {
+          "sha": "4205a77e851a7507d0a791d81be114cd74081485",
+          "date": "2026-11-11T16:36:27Z"
+        },
+        {
+          "sha": "d3d523e0c91735684678fcb7994078e1a50081ab",
+          "date": "2026-11-11T16:35:02Z"
+        },
+        {
+          "sha": "d94e12f33ae205a99af0bdcdd77fac9d91bf82bf",
+          "date": "2026-11-11T16:32:21Z"
+        },
+        {
+          "sha": "ab934ea20e1fbe71934172a4749f98e11a839b3c",
+          "date": "2026-11-11T16:26:15Z"
+        },
+        {
+          "sha": "664cd1a68d775732b07d4e7e08abe1b1b6eedb40",
+          "date": "2026-11-11T14:56:47Z"
+        },
+        {
+          "sha": "e61f43e315a707721bc549afb7dc7c50501c1554",
+          "date": "2026-11-11T14:56:00Z"
+        },
+        {
+          "sha": "6b3bcf6dde79a5f4be4089f15618a7ac9e56feec",
+          "date": "2026-11-11T14:48:23Z"
+        },
+        {
+          "sha": "ceef8434cb3ce806da7709586293e70ddb4396d1",
+          "date": "2026-11-11T14:46:45Z"
+        },
+        {
+          "sha": "d652d081977ced9b17bea358b070018a221c1bda",
+          "date": "2026-11-11T13:49:06Z"
+        },
+        {
+          "sha": "bccae39fadfa3f98963522578eed53b230603ac1",
+          "date": "2026-11-11T13:43:15Z"
+        },
+        {
+          "sha": "5df6ea2fa6e04c40434c5d97f0bc950b255161bc",
+          "date": "2026-11-11T13:17:43Z"
+        },
+        {
+          "sha": "b7c5a3d5814aac8b0a1036311f4ce1775fdc05e4",
+          "date": "2026-11-10T20:15:26Z"
+        },
+        {
+          "sha": "edaca9dec54e11dc7fb3d10a4983acf07c5f59ca",
+          "date": "2026-11-10T20:13:03Z"
+        },
+        {
+          "sha": "0b71cb97f024241437f9ac4a84ee3e240699e07b",
+          "date": "2026-11-10T19:24:26Z"
+        }
+      ]
     },
     {
       "name": "Support-Hack-The-Box-Writeup",
