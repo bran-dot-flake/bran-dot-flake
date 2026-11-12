@@ -1,6 +1,6 @@
 {
-  "updated": "Nov 11, 2026",
-  "collected_at": "2026-11-11T17:57:00.462629+00:00",
+  "updated": "Nov 12, 2026",
+  "collected_at": "2026-11-12T18:26:57.366212+00:00",
   "repos": [
     {
       "name": "Agent-Tesla-Malware-Analysis-and-Detection-Engineering",
@@ -44,7 +44,7 @@
         "github-pages",
         "portfolio"
       ],
-      "pushed_at": "2026-11-11T17:56:26Z",
+      "pushed_at": "2026-11-12T18:24:55Z",
       "stargazers_count": 0
     },
     {
@@ -145,7 +145,7 @@
     {
       "name": "STIX-TAXII-Threat-Intel-Automated-Summary",
       "topics": [],
-      "pushed_at": "2026-11-11T17:44:14Z",
+      "pushed_at": "2026-11-12T16:39:12Z",
       "stargazers_count": 0
     },
     {
@@ -525,13 +525,17 @@
     {
       "name": "bran-dot-flake.github.io",
       "languages": {
-        "JavaScript": 1862,
-        "CSS": 605,
+        "JavaScript": 1871,
+        "CSS": 606,
         "Python": 504,
         "HTML": 281
       },
-      "files": 99,
+      "files": 100,
       "commits": [
+        {
+          "sha": "92f2f3d9c0aeab8a26f4c00624530f1bf4409291",
+          "date": "2026-11-12T13:08:08Z"
+        },
         {
           "sha": "85a147993235ff90dc82915892f72d30283fd5fc",
           "date": "2026-11-09T17:31:31Z"
@@ -1393,14 +1397,6 @@
         {
           "sha": "b6e95720c452c008b37f8ad821344d5e3c96cb23",
           "date": "2026-09-24T16:32:44Z"
-        },
-        {
-          "sha": "640af4a230e9c6b4579ea74570ec6f8a8839eaee",
-          "date": "2026-08-13T19:22:35Z"
-        },
-        {
-          "sha": "3cab7fbaece34cf558e0246a498061bab5e023de",
-          "date": "2026-08-13T18:49:01Z"
         }
       ]
     },
@@ -1496,13 +1492,81 @@
     {
       "name": "STIX-TAXII-Threat-Intel-Automated-Summary",
       "languages": {
-        "Python": 4702,
-        "JavaScript": 368,
-        "CSS": 258,
+        "Python": 9018,
+        "JavaScript": 909,
+        "CSS": 358,
         "HTML": 29
       },
-      "files": 75,
+      "files": 90,
       "commits": [
+        {
+          "sha": "e16640045277fa58434d8f2c16ceff378e59c10d",
+          "date": "2026-11-12T16:39:11Z"
+        },
+        {
+          "sha": "e13c86be1cf34ab29020979da761309f240ddb0a",
+          "date": "2026-11-12T16:36:21Z"
+        },
+        {
+          "sha": "65b502dcca3780620296af4aa8aabf02fa7fdfe3",
+          "date": "2026-11-12T16:34:55Z"
+        },
+        {
+          "sha": "4f5cd3061eee4544dcd98ed51c950ff55dbd9798",
+          "date": "2026-11-12T14:57:26Z"
+        },
+        {
+          "sha": "f5d666ed8147c2d9a348ac061b9bf79ec139fdfb",
+          "date": "2026-11-12T14:45:07Z"
+        },
+        {
+          "sha": "dd7be94a90e586e7b5f29be095b70de22608b77c",
+          "date": "2026-11-12T14:44:02Z"
+        },
+        {
+          "sha": "44ec21fecb5e2cb36b1f207959a6ad41ff246c64",
+          "date": "2026-11-11T21:26:30Z"
+        },
+        {
+          "sha": "7151af7af9dbfde8f32c33940d7f732690957327",
+          "date": "2026-11-11T21:23:56Z"
+        },
+        {
+          "sha": "1dc21106ea9a074bc62e710574a845d6f16bd2b8",
+          "date": "2026-11-11T21:17:35Z"
+        },
+        {
+          "sha": "865fc78d5b706f89cfcd03c5405733e5a66878c4",
+          "date": "2026-11-11T20:46:07Z"
+        },
+        {
+          "sha": "8088c79dbd4939072bf5aceeb3b5338d3e6506ad",
+          "date": "2026-11-11T20:34:01Z"
+        },
+        {
+          "sha": "224b46ef5138abdc5470d2db512c353e19c7a6dd",
+          "date": "2026-11-11T19:28:49Z"
+        },
+        {
+          "sha": "523c728820d085b6f6e6e8494819349bef912ec2",
+          "date": "2026-11-11T19:27:45Z"
+        },
+        {
+          "sha": "83eac44d0c97d21c4d95ffd036224153416dbc8d",
+          "date": "2026-11-11T19:25:26Z"
+        },
+        {
+          "sha": "bdfb4bbb45948980e719a29c4de7412ebcc86345",
+          "date": "2026-11-11T18:35:27Z"
+        },
+        {
+          "sha": "a967db1997c8b79165604762e354cc6f42f16307",
+          "date": "2026-11-11T18:34:09Z"
+        },
+        {
+          "sha": "ef9b2ca91fc50e8b8bb89fb9255ef1aa09511a4f",
+          "date": "2026-11-11T18:30:30Z"
+        },
         {
           "sha": "f4728dfd4d8a60726e2dfc44146d68355ed95410",
           "date": "2026-11-11T17:43:41Z"
