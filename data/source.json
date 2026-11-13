@@ -1,6 +1,6 @@
 {
-  "updated": "Nov 12, 2026",
-  "collected_at": "2026-11-12T18:26:57.366212+00:00",
+  "updated": "Nov 13, 2026",
+  "collected_at": "2026-11-13T17:54:27.799462+00:00",
   "repos": [
     {
       "name": "Agent-Tesla-Malware-Analysis-and-Detection-Engineering",
@@ -44,7 +44,7 @@
         "github-pages",
         "portfolio"
       ],
-      "pushed_at": "2026-11-12T18:24:55Z",
+      "pushed_at": "2026-11-13T17:52:24Z",
       "stargazers_count": 0
     },
     {
@@ -79,16 +79,6 @@
       "stargazers_count": 0
     },
     {
-      "name": "LLM-Prompt-Injection",
-      "topics": [
-        "garak",
-        "llm-security",
-        "prompt-injection"
-      ],
-      "pushed_at": "2026-11-10T21:30:48Z",
-      "stargazers_count": 0
-    },
-    {
       "name": "Network-Traffic-Analysis-with-Wireshark",
       "topics": [
         "packet-analysis",
@@ -108,6 +98,12 @@
         "tshark"
       ],
       "pushed_at": "2026-10-08T15:48:14Z",
+      "stargazers_count": 0
+    },
+    {
+      "name": "OSINT-and-Exploitation-Framework",
+      "topics": [],
+      "pushed_at": "2026-11-13T17:50:58Z",
       "stargazers_count": 0
     },
     {
@@ -145,7 +141,7 @@
     {
       "name": "STIX-TAXII-Threat-Intel-Automated-Summary",
       "topics": [],
-      "pushed_at": "2026-11-12T16:39:12Z",
+      "pushed_at": "2026-11-13T08:10:46Z",
       "stargazers_count": 0
     },
     {
@@ -805,139 +801,6 @@
       ]
     },
     {
-      "name": "LLM-Prompt-Injection",
-      "languages": {
-        "Python": 703
-      },
-      "files": 44,
-      "commits": [
-        {
-          "sha": "a8ca7f2971771b413542cd1d81c3cdf7ce849fd3",
-          "date": "2026-11-10T21:30:48Z"
-        },
-        {
-          "sha": "69e2947c0fad8cc0f19f68c28c875305fa2ed85d",
-          "date": "2026-11-10T21:27:43Z"
-        },
-        {
-          "sha": "4a4981989aca59a3b2ae66425ab5642c03ca26e1",
-          "date": "2026-11-10T21:22:45Z"
-        },
-        {
-          "sha": "a6ec17284636c218b3943a6c9984e961e194b0a3",
-          "date": "2026-11-10T21:19:01Z"
-        },
-        {
-          "sha": "9a5cdfc80d3260a0afd9167224217588f73d0a95",
-          "date": "2026-11-10T21:17:00Z"
-        },
-        {
-          "sha": "1cb17b087d23a34eac6ca10f79de5b5b16efa3e9",
-          "date": "2026-11-10T21:10:23Z"
-        },
-        {
-          "sha": "fbf1486df739d07791a13916ac457a9f3fba05c9",
-          "date": "2026-11-10T18:30:59Z"
-        },
-        {
-          "sha": "52b271e30c78dfc5f9d7b70208ae1e08a73c3ce8",
-          "date": "2026-11-10T18:16:03Z"
-        },
-        {
-          "sha": "9195e2c5c070b334007cbc85a16d57e6b36bb60c",
-          "date": "2026-11-10T18:14:12Z"
-        },
-        {
-          "sha": "1e4956bf001651dbcc4aecde96df263cecbbfdf6",
-          "date": "2026-11-10T18:09:38Z"
-        },
-        {
-          "sha": "2b6e000a876dcf244214918325b7cd237f1cc199",
-          "date": "2026-11-10T18:00:20Z"
-        },
-        {
-          "sha": "2b3a95ae08f11f87695252b8cce9856d144d115a",
-          "date": "2026-11-10T17:53:16Z"
-        },
-        {
-          "sha": "1e9f997608bcd8f411de32e4d1954f28231217c6",
-          "date": "2026-11-10T17:46:46Z"
-        },
-        {
-          "sha": "e8edd7993cddebb5c2a77199c7ee582087e336aa",
-          "date": "2026-11-10T17:37:52Z"
-        },
-        {
-          "sha": "f779b2c2e5b2ac50dc1f7490c53dfeaf9557237c",
-          "date": "2026-11-10T17:37:48Z"
-        },
-        {
-          "sha": "8349e0930fead048dee6c1f60493e8a0f7339c5e",
-          "date": "2026-11-10T17:26:57Z"
-        },
-        {
-          "sha": "43edf5923326d5d4ff4a4568c26dc77b6868702b",
-          "date": "2026-11-10T17:12:41Z"
-        },
-        {
-          "sha": "e4b235182c685472eaf392afae5487971dcab6cb",
-          "date": "2026-11-10T17:03:35Z"
-        },
-        {
-          "sha": "93f8d28edaa176c62050e8cd573108f960a4745e",
-          "date": "2026-11-10T16:46:17Z"
-        },
-        {
-          "sha": "dc9bb6934980c06bed2d5a241d1df30712acd41d",
-          "date": "2026-11-10T16:19:45Z"
-        },
-        {
-          "sha": "9d3c89524e402062158642c43f0bbdfc0e90d2f5",
-          "date": "2026-11-10T16:18:49Z"
-        },
-        {
-          "sha": "a20aeefbf1c18925dc405e2b4d57d9099b7eade5",
-          "date": "2026-11-10T15:53:36Z"
-        },
-        {
-          "sha": "fc1d7c6532f98a0ec87aff0997b5df5a225591b0",
-          "date": "2026-11-10T15:36:52Z"
-        },
-        {
-          "sha": "303acb6f073fa204f3bed55c705163eddb8dedcb",
-          "date": "2026-11-10T15:20:07Z"
-        },
-        {
-          "sha": "7666bd77d6d6a8475e2bb672f654cd0b29093b2f",
-          "date": "2026-11-10T15:05:16Z"
-        },
-        {
-          "sha": "e6dfc4fab9d221c363d25026510060d14931301d",
-          "date": "2026-11-10T15:04:46Z"
-        },
-        {
-          "sha": "f21b9d2768538abd45a041552a9363af4eb8a76b",
-          "date": "2026-11-10T14:56:09Z"
-        },
-        {
-          "sha": "b6712b98d5e294c33dbbfc5ced4af926b6b2d758",
-          "date": "2026-11-10T14:35:24Z"
-        },
-        {
-          "sha": "de4e8485a4ed9d52998ae8b4550baceae82e81e9",
-          "date": "2026-11-10T14:33:37Z"
-        },
-        {
-          "sha": "7d7f4cea8ee2763f345891e620744722db521e65",
-          "date": "2026-11-09T20:12:29Z"
-        },
-        {
-          "sha": "b08ef44c69f6c2dfcc8eae22d4c40ec268117677",
-          "date": "2026-11-09T20:02:38Z"
-        }
-      ]
-    },
-    {
       "name": "Network-Traffic-Analysis-with-Wireshark",
       "languages": {},
       "files": 57,
@@ -1388,6 +1251,43 @@
       ]
     },
     {
+      "name": "OSINT-and-Exploitation-Framework",
+      "languages": {
+        "Python": 1935
+      },
+      "files": 22,
+      "commits": [
+        {
+          "sha": "d6a54c5684568363338b45210edc2ea6442b4809",
+          "date": "2026-11-13T17:50:58Z"
+        },
+        {
+          "sha": "ac507a881b1798d3533707dcfdb05dea293fd79b",
+          "date": "2026-11-13T17:47:04Z"
+        },
+        {
+          "sha": "e698aacbaf9e2179b1b6bd7cf098ed740a43fc63",
+          "date": "2026-11-13T17:43:15Z"
+        },
+        {
+          "sha": "ca5e9ef689595666b31b1fec2e07b5c32de4b2d5",
+          "date": "2026-11-13T17:40:56Z"
+        },
+        {
+          "sha": "ebed1f6ab1f00d51259648399643fa73504ca0b9",
+          "date": "2026-11-13T17:34:57Z"
+        },
+        {
+          "sha": "045c9227ed4e7e065cd503653ca344f901c8a916",
+          "date": "2026-11-13T17:19:32Z"
+        },
+        {
+          "sha": "33c69804baade6f7b62c9a792c841ff2155f58c9",
+          "date": "2026-11-13T16:54:13Z"
+        }
+      ]
+    },
+    {
       "name": "Python-IOC-Threat-Intelligence-Analyzer",
       "languages": {
         "Python": 829
@@ -1492,13 +1392,33 @@
     {
       "name": "STIX-TAXII-Threat-Intel-Automated-Summary",
       "languages": {
-        "Python": 9018,
-        "JavaScript": 909,
-        "CSS": 358,
-        "HTML": 29
+        "Python": 9560,
+        "JavaScript": 1046,
+        "CSS": 385,
+        "HTML": 63
       },
-      "files": 90,
+      "files": 94,
       "commits": [
+        {
+          "sha": "28e056fbd1d8f2f30011974be71556f074a847c9",
+          "date": "2026-11-12T20:59:13Z"
+        },
+        {
+          "sha": "6f1d3d9a0cf243be14cb402174bea547348ba7b1",
+          "date": "2026-11-12T20:57:28Z"
+        },
+        {
+          "sha": "d1a9a0b4517e47c29abc135c8c6e2f086a1917a5",
+          "date": "2026-11-12T20:53:20Z"
+        },
+        {
+          "sha": "4c0ef92cf9d6c0a501f90339fa62c824ea0ff46d",
+          "date": "2026-11-12T18:42:56Z"
+        },
+        {
+          "sha": "4836fa7c2e27891d6e5176eb1353cf78819a857b",
+          "date": "2026-11-12T18:40:27Z"
+        },
         {
           "sha": "e16640045277fa58434d8f2c16ceff378e59c10d",
           "date": "2026-11-12T16:39:11Z"

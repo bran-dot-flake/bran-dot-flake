@@ -1,14 +1,14 @@
 {
-  "updated": "Nov 12, 2026",
-  "lines_of_code": 17814,
-  "tracked_files": 514,
-  "commits_90d": 362,
+  "updated": "Nov 13, 2026",
+  "lines_of_code": 19786,
+  "tracked_files": 496,
+  "commits_90d": 343,
   "repositories": 16,
   "languages": {
-    "Python": 13760,
-    "JavaScript": 2780,
-    "CSS": 964,
-    "HTML": 310
+    "Python": 15534,
+    "JavaScript": 2917,
+    "CSS": 991,
+    "HTML": 344
   },
   "specializations": {
     "DFIR": 4,
