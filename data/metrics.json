@@ -1,12 +1,12 @@
 {
-  "updated": "Nov 13, 2026",
-  "lines_of_code": 19786,
-  "tracked_files": 496,
-  "commits_90d": 343,
-  "repositories": 16,
+  "updated": "Nov 14, 2026",
+  "lines_of_code": 17841,
+  "tracked_files": 474,
+  "commits_90d": 336,
+  "repositories": 15,
   "languages": {
-    "Python": 15534,
-    "JavaScript": 2917,
+    "Python": 13599,
+    "JavaScript": 2907,
     "CSS": 991,
     "HTML": 344
   },

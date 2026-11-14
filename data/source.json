@@ -1,6 +1,6 @@
 {
-  "updated": "Nov 13, 2026",
-  "collected_at": "2026-11-13T17:54:27.799462+00:00",
+  "updated": "Nov 14, 2026",
+  "collected_at": "2026-11-14T16:38:59.936507+00:00",
   "repos": [
     {
       "name": "Agent-Tesla-Malware-Analysis-and-Detection-Engineering",
@@ -44,7 +44,7 @@
         "github-pages",
         "portfolio"
       ],
-      "pushed_at": "2026-11-13T17:52:24Z",
+      "pushed_at": "2026-11-14T16:38:25Z",
       "stargazers_count": 0
     },
     {
@@ -101,12 +101,6 @@
       "stargazers_count": 0
     },
     {
-      "name": "OSINT-and-Exploitation-Framework",
-      "topics": [],
-      "pushed_at": "2026-11-13T17:50:58Z",
-      "stargazers_count": 0
-    },
-    {
       "name": "Python-IOC-Threat-Intelligence-Analyzer",
       "topics": [
         "ioc-analysis",
@@ -141,7 +135,7 @@
     {
       "name": "STIX-TAXII-Threat-Intel-Automated-Summary",
       "topics": [],
-      "pushed_at": "2026-11-13T08:10:46Z",
+      "pushed_at": "2026-11-14T08:09:06Z",
       "stargazers_count": 0
     },
     {
@@ -521,7 +515,7 @@
     {
       "name": "bran-dot-flake.github.io",
       "languages": {
-        "JavaScript": 1871,
+        "JavaScript": 1861,
         "CSS": 606,
         "Python": 504,
         "HTML": 281
@@ -1247,43 +1241,6 @@
         {
           "sha": "9fa3b2ccbbaa93063bc2110581bc4bfac176a90b",
           "date": "2026-10-08T15:28:19Z"
-        }
-      ]
-    },
-    {
-      "name": "OSINT-and-Exploitation-Framework",
-      "languages": {
-        "Python": 1935
-      },
-      "files": 22,
-      "commits": [
-        {
-          "sha": "d6a54c5684568363338b45210edc2ea6442b4809",
-          "date": "2026-11-13T17:50:58Z"
-        },
-        {
-          "sha": "ac507a881b1798d3533707dcfdb05dea293fd79b",
-          "date": "2026-11-13T17:47:04Z"
-        },
-        {
-          "sha": "e698aacbaf9e2179b1b6bd7cf098ed740a43fc63",
-          "date": "2026-11-13T17:43:15Z"
-        },
-        {
-          "sha": "ca5e9ef689595666b31b1fec2e07b5c32de4b2d5",
-          "date": "2026-11-13T17:40:56Z"
-        },
-        {
-          "sha": "ebed1f6ab1f00d51259648399643fa73504ca0b9",
-          "date": "2026-11-13T17:34:57Z"
-        },
-        {
-          "sha": "045c9227ed4e7e065cd503653ca344f901c8a916",
-          "date": "2026-11-13T17:19:32Z"
-        },
-        {
-          "sha": "33c69804baade6f7b62c9a792c841ff2155f58c9",
-          "date": "2026-11-13T16:54:13Z"
         }
       ]
     },
