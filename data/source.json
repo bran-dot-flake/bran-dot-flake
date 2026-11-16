@@ -1,6 +1,6 @@
 {
-  "updated": "Nov 15, 2026",
-  "collected_at": "2026-11-15T17:16:41.720637+00:00",
+  "updated": "Nov 16, 2026",
+  "collected_at": "2026-11-16T20:34:42.326261+00:00",
   "repos": [
     {
       "name": "Agent-Tesla-Malware-Analysis-and-Detection-Engineering",
@@ -44,7 +44,7 @@
         "github-pages",
         "portfolio"
       ],
-      "pushed_at": "2026-11-15T17:15:51Z",
+      "pushed_at": "2026-11-16T20:33:45Z",
       "stargazers_count": 0
     },
     {
@@ -135,7 +135,7 @@
     {
       "name": "STIX-TAXII-Threat-Intel-Automated-Summary",
       "topics": [],
-      "pushed_at": "2026-11-15T08:09:03Z",
+      "pushed_at": "2026-11-16T08:07:48Z",
       "stargazers_count": 0
     },
     {
